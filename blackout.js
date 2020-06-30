@@ -2,18 +2,19 @@ if (localStorage['blackout']) {
  if (Number(localStorage['blackout']) == 1) {
 $('BODY').addClass('blackout');
  } else {
-  $('BODY').removeClass('blackout');
+ Â $('BODY').removeClass('blackout');
  }
 } else {
-  localStorage['blackout'] = 0;
-  $('BODY').removeClass('blackout');
+ Â localStorage['blackout'] = 0;
+ Â $('BODY').removeClass('blackout');
 }
 $('BODY').show();
 $('#boToggle').on('click', function(){
-  if (Number(localStorage['blackout']) == 0) {
-      localStorage['blackout'] = 1;
+ Â if (Number(localStorage['blackout']) == 0) {
+ Â  Â  Â localStorage['blackout'] = 1;
 $('BODY').addClass('blackout');
-  } else {
-      localStorage['blackout'] = 0;
+ Â } else {
+ Â  Â  Â localStorage['blackout'] = 0;
 $('BODY').removeClass('blackout');
  }
+});
